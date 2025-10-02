@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import PRODUCTCARD from "./PRODUCTCARD";
 
 const backendUrl = "";
