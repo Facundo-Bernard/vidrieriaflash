@@ -1,7 +1,6 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./ContactoForm.css"; // <-- estilos separados
 import UBICACIONCOOP from "./ubicacioncoop/UBICACIONCOOP";
 
