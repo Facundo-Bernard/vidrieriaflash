@@ -102,9 +102,9 @@ export default function ContactoForm() {
             <p className="text-muted mb-0">Estamos para ayudarte</p>
           </motion.div>
 
-          <div className="row g-4 align-items-start">
+          <div className="row g-4 align-items-start shadow-lg">
             {/* Formulario */}
-            <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="col-12 col-lg-6">
+            <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="  col-12 col-lg-6">
               <div className="card shadow-soft rounded-4 border-0 contacto-card">
                 <div className="card-body p-4">
                   <div ref={statusRef} aria-live="polite" aria-atomic="true" className="mb-3">
@@ -167,8 +167,8 @@ export default function ContactoForm() {
                   <br />
                   <h3 className="h5 fw-semibold mb-3 contacto-subtitle">Contacto</h3>
                   <div className="d-flex flex-column gap-2 contacto-links">
-                    <a href="mailto:vidrieriaflorida@gmail.com.ar">Ejemplo@gmail.com.ar</a>
-                    <a href="tel:+541127135239">+54 11 1234 5678</a>
+                    <a href="mailto:vidrieriaflorida@gmail.com.ar">vidrieriaflash@gmail.comr</a>
+                    <a href="tel:+541127135239">+54 15 5736 8801</a>
                     <a href="https://instagram.com/" target="_blank">Instagram</a>
                   </div>
                 </div>

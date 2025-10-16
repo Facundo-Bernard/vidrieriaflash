@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import logo from "../../assets/logo.png"
 
 function NAVBAR() {
 
@@ -26,8 +27,22 @@ function NAVBAR() {
 
 
   return (
-    <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded mb-1">
-      <Link className="navbar-brand" to="/">Navbar</Link>
+    <nav className="navbar sticky-top navbar-expand-lg navbar-light shadow bg-light p-0 rounded">
+      <Link to="/" className="navbar-brand p-0">
+        <img
+          src={logo}
+          alt="Logo"
+          style={{
+            width: "120px",
+            padding:"0",
+            margin:"0",       // mantiene proporción
+            maxWidth: "100%",    // evita desbordes
+            objectFit: "contain" // no se deforma
+          }}
+        />
+      </Link>
+
+
       <button
         className="navbar-toggler"
         type="button"

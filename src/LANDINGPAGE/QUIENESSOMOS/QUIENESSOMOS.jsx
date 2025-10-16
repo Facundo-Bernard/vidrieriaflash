@@ -33,5 +33,9 @@ export default function QuienesSomos() {
         </p>
       </motion.div>
     </section>
+
+
+
   );
 }
+

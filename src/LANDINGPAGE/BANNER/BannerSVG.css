@@ -20,7 +20,7 @@
   box-shadow: 0 8px 30px rgba(3,30,25,0.12);
   overflow:hidden;
   position:relative;
-  margin-top: 10vh;
+  margin-top: 1vh;
 }
 
 /* Pequeña banda translúcida a la izquierda simulando vidrio/hoja */
@@ -104,3 +104,31 @@
   .vf-sub{ font-size:0.95rem; }
   .vf-content{ max-width:90vw; }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Playfair+Display:wght@700&display=swap');
+
+
+
+.vf-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #0d3b3b;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flash-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #00bfa6;
+  margin-left: 6px;
+}
+
+.vf-sub {
+  font-family: "Poppins", sans-serif;
+  color: #083838;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+

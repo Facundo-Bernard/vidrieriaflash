@@ -33,16 +33,16 @@ export default function NoticiasCarousel() {
         {noticias.map((noticia) => (
           <motion.div
             key={noticia.id}
-            className="col-12 col-md-4"
+            className="col-12 col-md-4 shad"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
           >
             <div
-              className="card border-0 h-100 rounded-4 shadow-sm"
+              className="card border-0 h-100 rounded-4 shadow-lg"
               style={{ backgroundColor: "#fff" }}
             >
-              <div className="card-body text-center p-5">
+              <div className="card-body text-center shadow-lg p-5">
                 <h5
                   className="fw-semibold mb-3"
                   style={{
