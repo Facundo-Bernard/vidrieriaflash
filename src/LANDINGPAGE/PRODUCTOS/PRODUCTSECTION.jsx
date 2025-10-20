@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PRODUCTCARD from "./PRODUCTCARD";
 
-const backendUrl = "";
+const backendUrl = "http://localhost:4000/productos";
 
 function ProductsSection({
   defaultProducts = [
@@ -14,7 +14,7 @@ function ProductsSection({
 
   useEffect(() => {
     const intervalo = setInterval(() => {
-      fetch(`${backendUrl}/product`)
+      fetch(`${backendUrl}`)
         .then((res) => res.json())
         .then((data) => {
           if (Array.isArray(data) && data.length > 0) {
@@ -22,6 +22,7 @@ function ProductsSection({
           }
         })
         .catch((err) => console.error("Error al cargar productos:", err));
+        
     }, 5000);
 
     return () => clearInterval(intervalo);
@@ -49,8 +50,8 @@ function ProductsSection({
           {products.map((p, idx) => (
             <div className="col-md-4 mb-4 d-flex" key={idx}>
               <PRODUCTCARD
-                title={p.title}
-                description={p.description}
+                title={p.titulo}
+                description={p.descripcion}
                 image={p.image}
               />
             </div>

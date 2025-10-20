@@ -33,9 +33,9 @@ export default function ProductCard({ title, description, image }) {
 
   return (
     <>
-      <div className="col-12 col-md-12 col-lg-12 d-flex">
+      <div className="col-12   col-md-12 col-lg-12 d-flex">
         <motion.div
-          className="card shadow-lg product-card animate__animated animate__fadeInUp w-100"
+          className="card b border shadow-lg product-card shadow animate__animated animate__fadeInUp w-100"
           whileHover={{ y: -5 }}
           transition={{ duration: 0.3 }}
         >
@@ -48,7 +48,7 @@ export default function ProductCard({ title, description, image }) {
             <div className="overlay" />
           </div>
 
-          <div className="card-body d-flex flex-column">
+          <div className="card-body border-top border-secondary d-flex flex-column">
             <h5 className="card-title text-truncate">{title}</h5>
             <p className="card-text text-truncate-multiline">{description}</p>
           </div>
@@ -131,6 +131,10 @@ export default function ProductCard({ title, description, image }) {
           -webkit-overflow-scrolling: touch;
           touch-action: manipulation;
         }
+          
+        /* Fondo general: verde agua light (sólo aquí) */
+        .product-card{ background: linear-gradient(180deg,#e8fff9,#cff6ee); overflow:hidden; border: none; }
+
 
         .modal-image {
           max-width: 92%;

@@ -2,7 +2,8 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-light border-top shadow-lg py-4 mt-5">
+    <footer className="bg-light border  shadow py-4 mt-5" style={{ boxShadow: "0 -4px 6px rgba(0,0,0,0.1)" }}
+>
       <div className="container">
         <div className="row text-center text-md-start">
           {/* Redes sociales */}

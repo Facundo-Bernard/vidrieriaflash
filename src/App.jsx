@@ -12,7 +12,7 @@ function App() {
     <>
       <NAVBAR></NAVBAR>
       <RUTAS></RUTAS>
-      <Footer></Footer>
+      <Footer ></Footer>
     </>
   )
 }
