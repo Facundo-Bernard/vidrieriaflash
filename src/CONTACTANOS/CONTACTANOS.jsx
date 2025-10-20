@@ -95,7 +95,7 @@ export default function ContactoForm() {
 
   return (
     <div>
-      <div className="contacto-bg">
+      <div className="contacto-bg border">
         <div className="container mb-4">
           <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-5 text-center">
             <h1 className="contacto-title">Contáctanos</h1>

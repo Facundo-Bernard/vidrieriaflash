@@ -12,21 +12,30 @@ function ProductsSection({
 }) {
   const [products, setProducts] = useState(defaultProducts);
 
+
   useEffect(() => {
-    const intervalo = setInterval(() => {
-      fetch(`${backendUrl}`)
+    // función para cargar noticias (la podemos reutilizar)
+    const cargarNoticias = () => {
+      fetch(backendUrl)
         .then((res) => res.json())
         .then((data) => {
-          if (Array.isArray(data) && data.length > 0) {
-            setProducts(data);
-          }
+          if (Array.isArray(data) && data.length > 0) setProducts(data);
         })
-        .catch((err) => console.error("Error al cargar productos:", err));
-        
-    }, 5000);
+    };
 
+    // Ejecutar una vez al renderizar (montaje)
+    cargarNoticias();
+
+    // Luego cada 60 segundos
+    const intervalo = setInterval(cargarNoticias, 60000);
+
+    // Limpiar intervalo al desmontar
     return () => clearInterval(intervalo);
   }, []);
+
+
+
+
 
   return (
     <section id="productos" className="py-5 bg-white">
@@ -35,13 +44,13 @@ function ProductsSection({
         <h2
           className="mb-5 fw-light"
           style={{
-          fontSize: "2.2rem",
-          fontWeight: 300,
-          fontFamily:
-            '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif',
-          color: "#111",
-          textAlign: "left",
-        }}
+            fontSize: "2.2rem",
+            fontWeight: 300,
+            fontFamily:
+              '-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif',
+            color: "#111",
+            textAlign: "left",
+          }}
         >
           Productos destacados
         </h2>
