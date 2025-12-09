@@ -1,26 +1,25 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "./BannerSVG.css";
-import { useNavigate } from "react-router-dom";
 
-export default function BannerVF(){
-  const navigate = useNavigate();
-
+export default function BannerVF() {
   return (
-    <section className="vf-banner " aria-label="Banner VidrieriaFlash">
-      
+    <header className="vf-hero">
+      <div className="vf-overlay"></div>
 
       <div className="vf-content">
-        <motion.h2 className="vf-title" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-          VidrieriaFlash
-        </motion.h2>
-        <motion.p className="vf-sub" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
-          Vidrios y ventanales a medida — rápida entrega y colocación profesional.
-        </motion.p>
-        <motion.a className="vf-cta"  onClick={() => navigate("/contactanos")} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          Pedir presupuesto
-        </motion.a>
+        <h1 className="vf-title fade">
+          Vidriería <span>FLASH</span>
+        </h1>
+
+        <p className="vf-sub fade delay">
+          Diseño moderno en vidrio, cerramientos y arquitectura transparente.
+        </p>
+
+        <div className="vf-actions fade delay2">
+          <button className="vf-btn primary">Pedir presupuesto</button>
+          <button className="vf-btn ghost">Ver trabajos</button>
+        </div>
       </div>
-    </section>
+    </header>
   );
 }
