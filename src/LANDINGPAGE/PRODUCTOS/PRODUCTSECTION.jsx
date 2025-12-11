@@ -39,14 +39,22 @@ export default function ProductSection() {
     <section className="ps-container container py-5">
 
       {/* ---------- Novedades ---------- */}
-      <h2 className="mb-4 section-title">✨ Novedades</h2>
+      <h2 className="mb-4 section-title"> Novedades</h2>
       <div className="row g-4 mb-5">
         {newsData.map((n) => (
-          <div className="col-md-4" key={n.id}>
+          <div className="col-md-4 " key={n.id}>
             <motion.div
               whileHover={{ scale: 1.03 }}
-              className="news-card shadow-sm"
+              className="news-card"
+              style={{
+                background: "#fff",
+                borderRadius: "10px",
+                overflow: "hidden",
+                boxShadow: "0 0 20px rgba(0, 0, 0, 0.31)"
+              }}
             >
+
+
               <img src={n.image} alt={n.title} className="news-img" />
               <div className="p-3">
                 <h5>{n.title}</h5>
@@ -65,43 +73,62 @@ export default function ProductSection() {
 
         {/* LEFT - QUIENES SOMOS */}
         <div className="col-lg-4 pe-lg-5">
-          <div className="about-box shadow-sm p-4 rounded">
+          <div
+    className="about-box shadow-lg p-5 rounded-4"
+    style={{
+      background: "linear-gradient(195deg, #1abbaea8, #e9faffaa)",
+      backdropFilter: "blur(6px)",
+      border: "1px solid #ffffff66",
+      maxWidth: "520px",
+    }}
+  >
+    {/* ICONO + TÍTULO */}
+    <div className="d-flex align-items-center justify-content-center mb-4">
+      <div
+        style={{
+          fontSize: "40px",
+          marginRight: "12px",
+        }}
+      >
+        
+      </div>
+      <h2 className="fw-bold m-0" style={{ fontSize: "2rem" }}>
+        ¿Quiénes somos?
+      </h2>
+    </div>
 
-            <div className="about-icon mb-3">
-              🏛️
-            </div>
+    {/* DESCRIPCIÓN */}
+    <p className="text-muted text-center fs-5" style={{ lineHeight: "1.6" }}>
+      En <strong>Cristales Flash</strong> realizamos instalaciones de vidrio a
+      medida para arquitectura moderna, hogares y proyectos de diseño.
+      <br />
+      Nuestro foco: <strong>precisión</strong>, <strong>estética</strong> y
+      <strong> cumplimiento real de plazos</strong>.
+    </p>
 
-            <h3 className="mb-3">Quiénes somos</h3>
 
-            <p className="text-muted">
-              Somos <strong>VidrieríaFlash</strong>, especialistas en instalaciones de vidrio a medida
-              para arquitectura moderna, obra y diseño interior.  
-              Nuestro compromiso: precisión, estética y plazos reales.
-            </p>
-
-            <ul className="ps-0 mt-4 about-list">
-              <li>📌 Instalación garantizada</li>
-              <li>📌 Materiales premium</li>
-              <li>📌 Asesoría técnica</li>
-              <li>📌 Respuesta en 24hs</li>
-            </ul>
-
-            <button className="btn btn-dark w-100 mt-4">📩 Pedir presupuesto</button>
-          </div>
+  </div>
         </div>
 
         {/* RIGHT - PRODUCTOS */}
-        <div className="col-lg-8 mt-5 mt-lg-0">
-          <div className="d-flex align-items-center justify-content-between mb-3">
-            <h3>Productos</h3>
+        <div className="col-lg-8 ">
+          <div className="d-flex align-items-center justify-content-between mb-">
+            <h3 id="productos">Productos</h3>
           </div>
 
           <div className="row g-4">
             {products.map((item) => (
-              <div className="col-md-6" key={item.id}>
+              <div className="col-md-6 " key={item.id}
+              style={{
+                background: "#fff",
+                borderRadius: "10px",
+                overflow: "hidden",
+                boxShadow: "0 0 20px rgba(0, 0, 0, 0.31)"
+              }}>
                 <motion.div
                   whileHover={{ y: -4 }}
                   className="product-card shadow-sm"
+                  
                 >
                   <button className="product-img-btn" onClick={() => handleOpen(item)}>
                     <img src={item.image} alt={item.title} className="product-img" />

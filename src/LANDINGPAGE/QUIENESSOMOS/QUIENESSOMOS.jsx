@@ -7,7 +7,7 @@ export default function QuienesSomos() {
       {/* Cuadro izquierdo */}
       <motion.div
         className="d-flex flex-fill justify-content-center align-items-center rounded-4 shadow-lg p-5"
-        style={{ minWidth: "300px", maxWidth: "450px", backgroundColor: "#A7E8F1" }}
+        style={{ minWidth: "300px", maxWidth: "450px", backgroundColor: "#37aab9ff" }}
         initial={{ opacity: 0, x: -60 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}

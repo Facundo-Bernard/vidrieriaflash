@@ -8,8 +8,6 @@ function LANDINGPAGE() {
   return (
     <>
     <BannerVF></BannerVF>
-    <QuienesSomos></QuienesSomos>
-    <NoticiasCarousel></NoticiasCarousel>
     <ProductsSection></ProductsSection>
 
     </>

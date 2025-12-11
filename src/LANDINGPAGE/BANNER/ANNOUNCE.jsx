@@ -16,7 +16,7 @@ export default function BannerVF() {
         </p>
 
         <div className="vf-actions fade delay2">
-          <button className="vf-btn primary">Pedir presupuesto</button>
+          <button className="vf-btn primary">Ver productos</button>
           <button className="vf-btn ghost">Ver trabajos</button>
         </div>
       </div>

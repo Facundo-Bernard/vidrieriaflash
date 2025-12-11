@@ -95,17 +95,22 @@ export default function ContactoForm() {
 
   return (
     <div>
-      <div className="contacto-bg border">
-        <div className="container mb-4">
+        <div className="container mt-5 mb-4">
           <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-5 text-center">
             <h1 className="contacto-title">Contáctanos</h1>
             <p className="text-muted mb-0">Estamos para ayudarte</p>
           </motion.div>
 
-          <div className="row g-4 align-items-start shadow-lg">
+          <div className="row g-4 align-items-start ">
             {/* Formulario */}
             <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="  col-12 col-lg-6">
-              <div className="card shadow-soft rounded-4 border-0 contacto-card">
+              <div className="card rounded-4 border-0 contacto-card"
+               style={{
+                background: "#4ed1c052",
+                borderRadius: "10px",
+                overflow: "hidden",
+                boxShadow: "0 0 20px rgba(0, 0, 0, 0.31)"
+              }}>
                 <div className="card-body p-4">
                   <div ref={statusRef} aria-live="polite" aria-atomic="true" className="mb-3">
                     {status === "success" && <div className="alert alert-success rounded-3">Mensaje enviado con éxito. ¡Gracias!</div>}
@@ -160,8 +165,14 @@ export default function ContactoForm() {
             </motion.div>
 
             {/* Ubicación */}
-            <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="col-12 col-lg-6">
-              <div className="card shadow-soft rounded-4 border-0 ubication-card contacto-card">
+            <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="col-12 col-lg-6"
+            style={{
+                background: "#4ed1c052",
+                borderRadius: "10px",
+                overflow: "hidden",
+                boxShadow: "0 0 20px rgba(0, 0, 0, 0.31)"
+              }}
+            >
                 <div className="card-body p-4">
                   <UBICACIONCOOP />
                   <br />
@@ -172,11 +183,9 @@ export default function ContactoForm() {
                     <a href="https://instagram.com/" target="_blank">Instagram</a>
                   </div>
                 </div>
-              </div>
             </motion.div>
           </div>
         </div>
       </div>
-    </div>
   );
 }
