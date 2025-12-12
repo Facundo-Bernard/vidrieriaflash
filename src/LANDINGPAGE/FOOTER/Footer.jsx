@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="col-12 col-md-4 mb-4 mb-md-0">
             <h6 className="fw-light mb-3 text-white">Contacto</h6>
             <p className="mb-1 text-light">Tel: +54 15 5736 8801</p>
-            <p className="mb-0 text-light">Email: vidrieriaflash@gmail.com</p>
+            <p className="mb-0 text-light">Email: Cristalesflash@gmail.com</p>
           </div>
 
           {/* Ubicación */}

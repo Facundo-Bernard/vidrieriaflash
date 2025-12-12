@@ -178,7 +178,7 @@ export default function ContactoForm() {
                   <br />
                   <h3 className="h5 fw-semibold mb-3 contacto-subtitle">Contacto</h3>
                   <div className="d-flex flex-column gap-2 contacto-links">
-                    <a href="mailto:vidrieriaflorida@gmail.com.ar">vidrieriaflash@gmail.comr</a>
+                    <a href="mailto:Cristalesflorida@gmail.com.ar">Cristalesflash@gmail.comr</a>
                     <a href="tel:+541127135239">+54 15 5736 8801</a>
                     <a href="https://instagram.com/" target="_blank">Instagram</a>
                   </div>

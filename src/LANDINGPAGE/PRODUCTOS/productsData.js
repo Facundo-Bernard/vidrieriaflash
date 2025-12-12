@@ -4,32 +4,38 @@ const products = [
     id: "p01",
     title: "Vidrio templado 8mm",
     description: "Alta resistencia y acabado premium — ideal para balcones y puertas.",
-    image: "https://images.unsplash.com/photo-1599422314077-f4dfdaa4cd1b?q=80&w=1200&auto=format&fit=crop"
+    image: "https://www.3ds.com/assets/invest/styles/highlight/public/2023-02/glass-verre-1.jpg.webp?itok=xSyiOvob"
   },
   {
     id: "p02",
     title: "Ventanales corredizos",
     description: "Sistema corredizo de alta eficiencia térmica y acústica.",
-    image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop"
+    image: "https://ventanaskline.com/wp-content/uploads/2023/10/ventanas-correderas-slide-1-kline.jpg"
   },
   {
     id: "p03",
     title: "Mampara de baño",
     description: "Perfiles minimalistas y vidrio templado con tratamiento repelente.",
-    image: "https://images.unsplash.com/photo-1600585152907-33091ed5dc2a?q=80&w=1200&auto=format&fit=crop"
+    image: "https://hidromasajesweb.com.ar/wp-content/uploads/2021/12/ihfpihpipii.jpg"
   },
   {
     id: "p04",
     title: "Espejo decorativo",
     description: "Corte personalizado, iluminación LED opcional y diseño a medida.",
-    image: "https://images.unsplash.com/photo-1582719478175-5531d24a6e9d?q=80&w=1200&auto=format&fit=crop"
+    image: "https://ae01.alicdn.com/kf/Se24e4657016346c99b464715a36a3e3bb.jpeg"
   },
   {
     id: "p05",
     title: "Barandilla de vidrio",
     description: "Seguridad arquitectónica con estética totalmente transparente.",
-    image: "https://images.unsplash.com/photo-1505691723518-36a6b87f6ee8?q=80&w=1200&auto=format&fit=crop"
+    image: "https://barandilux.com/wp-content/uploads/2023/07/Barandilla-de-cristal-con-pasamanos-cuadrado-y-base-de-aluminio-color-negro-anodizado.jpeg"
   },
+  {
+    id: "p06",
+    title: "vidrio DVH",
+    description: "Seguridad arquitectónica con estética totalmente transparente.",
+    image: "https://i0.wp.com/vansacr.com/wp-content/uploads/2020/03/p16-f1.jpg?resize=709%2C350&ssl=1"
+  }
 ];
 
 export default products;
