@@ -13,7 +13,7 @@ export default function ProductSection() {
       title: "Promoción de Invierno",
       short: "15% OFF en mamparas por tiempo limitado.",
       image:
-        "https://images.unsplash.com/photo-1582719478175-5531d24a6e9d?q=80&w=1200&auto=format&fit=crop",
+        "https://www.shutterstock.com/image-vector/get-extra-20-off-sale-260nw-2542136983.jpg",
       cta: "Aprovechar"
     },
     {
